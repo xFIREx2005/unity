@@ -1,6 +1,4 @@
 class Peca {
-	
-	
 	constructor(ctx){
 		this.ctx = ctx;
 		this.color = 'blue';
@@ -18,14 +16,14 @@ class Peca {
 		this.shape.forEach((row, y) => {
 			row.forEach((value, x) => {
 				if (value > 0){
-					this.ctx.fillRect(this.x + x, this.y + y, 1, 1);
+					this.ctx.fillRect(this.x+x, this.y + y, 1, 1);
 				}
 			});
 		});
 		
+		
 	}
-	
-	mover(p) {
+	mover(p){
 		this.x = p.x;
 		this.y = p.y;
 	}
